@@ -160,6 +160,19 @@ mainImages.forEach((image) =>{
 
 });
 
+//=========================more templete=========================
+const moreTemplete = document.querySelector("#more-work-templete");
+const moreExploreBtn = document.querySelector(".work-explore-btn");
+const moreListLink = document.querySelector("#more-list-link");
+
+moreExploreBtn.addEventListener('click', () => {
+    moreTemplete.style.display = "block";
+});
+moreListLink.addEventListener('click' , () => {
+    moreTemplete.style.display = "block";
+
+})
+
 // ========================toggle =================================
 const topScroll = document.querySelector('.top-scroll');
 

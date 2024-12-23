@@ -1006,7 +1006,8 @@
  }
  .skill-head h2::after, 
  .topic-title::after, 
- #tools h2::after{
+ #tools h2::after,
+ #worktemplete h2::after{
     position: absolute;
     content: '';
     width: 50px;
@@ -1019,7 +1020,8 @@
  }
  .skill-head h2:hover::after,
  .topic-title:hover::after,
- #tools h2:hover::after{
+ #tools h2:hover::after,
+ #worktemplete h2:hover::after{
     width: 80px;
     background: var(--gradient-4);
  }
@@ -1460,14 +1462,298 @@
 =============work templete css  ==============
 -------------------------------------------*/
 #worktemplete{
-   border: 1px solid red;
+   border: 1px solid var(--bg-grey-blue);
    max-width: 100%;
    height: auto;
    margin-top: 6%;
    margin-bottom: 2%;
-   padding: 10px;
+   padding: 15px;
+}
+#worktemplete h2{
+   max-width: 100%;
+   margin: 2% ;
+   position: relative;
+   font-weight: 400;
+   transition: var(--transition-1);
+
+}
+#worktemplete h2:hover{
+   font-weight: 500;
+}
+#worktemplete .work-text{
+   margin-bottom: 20px;
+   font-weight: 400;
+   word-spacing: 2px;
+   font-size: var(--font-p);
+   opacity: 0.7;
+   margin: 2% ;
+}
+.worktemplete-container{
+   max-width: 100%;
+   margin: 0 auto;
+   height: auto;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 20px;
+   margin-top: 30px;
+   position: relative;
+}
+.worktemplete-container .worktemplete-card{
+   border: 1px solid var(--bg-secondary);
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   padding: 15px;
+   border-radius: 10px;
+   max-width: 100%;
+}
+.worktemplete-card .work-img{
+   width: 100%;
+   max-width: 100%;
+   margin: 0 auto;
+   height: auto;
+   border-radius: 8px;
+   transform: scale(1);
+   transition: var(--transition-1);
+   margin-bottom: 15px;
+}
+.worktemplete-card .work-img:hover{
+   transform: scale(1.02);
+}
+.work-card-content{
+   max-width: 100%;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   padding: 0 10px;
+   margin-bottom: 10px;
+}
+.work-card-content .work-desc{
+   display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 10px;
+  
+}
+.work-desc p:first-child{
+   font-size: 0.9rem;
+   word-spacing: 5px;
+   transition: var(--transition-1); 
+   opacity: 0.5;  
+}
+.work-desc p:last-child{
+   font-size: 0.9rem;
+}
+.work-desc p:hover{
+   color: var(--text-white);
+   opacity: 0.8;
+}
+.work-desc p i{
+   color: var(--text-orange);
+   padding-right: 5px;
+}
+.work-card-content h5{
+   font-weight: 400;
+   text-transform: capitalize;
+   color: var(--default-white);
+   margin-bottom: 20px;
+   letter-spacing: 1px;
+   transition: var(--transition-1);
+}
+.work-card-content h5:hover{
+   color: var(--text-offWhite);
+}
+.work-card-content .work-end{
+   position: relative;
+   display: flex;
+   width: 100%;
+   gap: 10px;
+   margin-bottom: 5px;
+}
+.work-end span{
+   background-color: var(--bg-grey-blue);
+   padding: 5px 14px;
+   border-radius: 10px;
+   font-size: var(--font-a);
+   font-weight: 300;
+   color: var(--text-offWhite);
+   text-transform: capitalize;
+   transition: var(--transition-1);
+   border: 1px solid transparent;
+}
+.work-end span:hover{
+   border: 1px solid var(--text-orange);
+
+}
+.work-end .work-end-btn{
+   padding: 0 20px;
+   max-width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   color: var(--default-black);
+   font-size: var(--font-a);
+   font-weight: 800;
+   text-align: center;
+   border-radius: 30px;
+   letter-spacing: 1px;
+   text-transform: capitalize;
+   background-color: var(--default-white);
+   transition: var(--transition-1);
+   border: 1px solid var(--default-white);
+}
+.work-end .work-end-btn:hover{
+   color: var(--text-offWhite);
+   background-color: var(--bg-oxford-blue);
+   border: 1px solid var(--text-orange);
+}
+.work-card-content .work-link{
+   position: absolute;
+   bottom: 2px;
+   right: 10px;
+   padding: 5px;
+   background:var(--gradient-3);
+   cursor: pointer;
+   border-radius: 5px;
+   border: 1px solid var(--bg-blue);
+   transition: var(--transition-1);
+}
+.work-card-content .work-link:hover{
+   border: 1px solid var(--bg-primary);
+}
+.work-card-content .work-link img{
+   transform: scale(1);
+   transition: var(--transition-1);
+}
+.work-card-content .work-link img:hover{
+   transform: scale(1.1);
+}
+.work-explore-btn{
+   align-items: center;
+   
+   color: var(--bg-secondary);
+   background: none;
+   background-color: var(--default-white);
+   margin: 4% auto;
+   margin-bottom: 15px;
+   padding: 10px 25px;
+   border: 0;
+   outline: 0;
+   font-weight: 600;
+   font-size:var(--font-a);
+   border-radius: 30px;
+   text-transform: capitalize;
+   cursor: pointer;
+   border: 1px solid transparent;
+   transition: var(--transition-1);
+
+}
+.work-explore-btn:hover{
+   border: 1px solid var(--text-orange);
+   background-color: var(--bg-grey-blue);
+   color: var(--text-offWhite);
+}
+.work-explore-btn span{
+   display: inline-block;
+   position: relative;
+   transition: 0.3s;
+
+}
+.work-explore-btn span::after{
+   content: '\2193';
+   position: absolute;
+   opacity: 0;
+   top: -5px;
+   right: 5px;
+   font-size: var(--font-btn);
+   transition: 0.3s;
+   color: var(--text-offWhite);
+   
+}
+.work-explore-btn:hover span{
+   padding-right: 25px;
+   
+}
+.work-explore-btn:hover span::after{
+   opacity: 1;
+   right: 0;
 }
 
+
+#more-work-templete{
+   max-width: 100%;
+   margin: 0 auto;
+   margin-top: 30px;
+   display: none;
+   animation: zoom 0.7s , linear;
+}
+#more-work-templete .more-work-container{
+   width: 100%;
+   display: grid;
+   margin-top: 35px;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 15px;
+}
+.more-card{
+   border: 1px solid var(--bg-grey-blue);
+   padding: 5px;
+   border-radius: 8px;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
+}
+.more-card .more-word-img{
+   border-radius: 10px;
+   padding: 5px;
+}
+.work-card-content .more-work-desc{
+   margin-top:-15px;
+}
+.more-work-desc > p{
+   font-size: 0.8rem;
+   font-weight: 200;
+   padding: 0 -10px;
+}
+.work-card-content .more-h5{
+   line-height: 22px;
+   font-size: var(--font-btn);
+}
+.work-card-content .more-work-end{
+   font-size: var(--font-a);
+   display: flex;
+   width: 100%;
+   justify-content: space-around;
+   align-items: center;
+   margin-bottom: 15px;
+}
+.more-work-end span{
+   padding: 5px 10px;
+   background-color: var(--bg-grey-blue);
+   border: 1px solid transparent;
+   border-radius: 30px;
+   color: var(--text-offWhite);
+   transition: var(--transition-1);
+}
+.more-work-end span:hover{
+   border: 1px solid var(--text-orange);
+   background-color: var(--bg-oxford-blue);
+}
+.more-work-end-btn{
+   color: var(--default-black);
+   background-color: var(--default-white);
+   padding: 5px 10px;
+   border: 1px solid transparent;
+   border-radius: 30px;
+   font-weight: 800;
+   transition: var(--transition-1);  
+}
+.more-work-end-btn:hover{
+   color: var(--text-offWhite);
+   background-color: var(--bg-oxford-blue);
+   border: 1px solid var(--text-orange);
+
+}
 
  /* ========================= main ends here========================= */
 
@@ -1557,8 +1843,8 @@
 }
 .msg-modal-box #msg-dlt{
    position: absolute;
-   top: 10px;
-   right: 10px;
+   top: -3px;
+   right: 0px;
    cursor: pointer;
    border-radius: 50%;
    transition: var(--transition-1);
