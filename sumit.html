@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Website portfolio landing page">
+    <meta name="title" content="personal portfolio website">
+    <meta name="keywords" content="sumit sarkar, Website, portfolio website, bangladesh, ">
+    <meta name="author" content="sumit sarkar">
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- favicon section  -->
+    <link rel="shortcut icon" href="https://workmatejob.com/images/avatars/avatar_901168716077495851.jpg" type="image/x-icon">
+
+    <!-- this is Css section  -->
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <!-- this is google font section  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- ionicon link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.4.0/esm/ionicons.min.js" integrity="sha512-heZj7rPbZHWyOEhE34vsJkzj2DKK2mZ9D3jjMkXQJ0uMGu/m5iOty+le26NL1eFZ5+qa4XBYcflwYwITwCWufw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+
+    <title> Introducing Sumit ...</title>
+</head>
+<body>
+    <!-- ==============================header============================== -->
+   <header class="" >
+    <div class="container head active-header" data-header>
+        <a href="#hero" class="logo" title="sumit optical tech">
+            <img src="image/logo_white__1_-removebg-preview.png" alt="">
+        </a>
+        <nav>
+            <ul>
+                <li class="list"><a href="#hero" class="active">home</a></li>
+                <li class="list"><a href="#skill">skill</a></li>
+                <li class="list"><a href="#worktemplete">work templete</a></li>
+                <li class="list-dropdown">
+                    <a href="#post" class="dropbtn">blog <i class="fa-solid fa-chevron-down "></i></a>
+                    <div class="dropdown-content">
+                        <a href="#blog">blog post</a>
+                        <a href="#feature">feature post</a>
+                        <a href="#more">more templete</a>
+                        <a href="#expertise">exprience</a>
+                        <a href="#topics">topics</a>
+                        <a href="#about"> about</a>
+                        <a href="#tools"> tools</a>
+                      </div>
+                   
+                </li>
+                <li class="list"><a href="#contact" id="contact-list" >contact me</a></li>
+            </ul>
+            <!-- <div class="mode">
+                <a href=""><img src="image/contrast.png" alt="" class="sun-icon" id="sun"></a>
+                <a href=""><img src="image/night-mode.png" alt="" class="dark-icon" id="dark"></a>
+            </div> -->
+        </nav>
+        <div id="menu">
+            <img src="image/menu-bar.png" alt="" class="menu-icon">
+        </div>
+
+        <div id="sidebar" class="active-sidebar">
+            
+            <div class="sidebar-logo">
+                <img src="image/Untitled design (1).jpg" alt="" width="50px" title="sumitOpticalTech">
+                <li onclick=crossbar() class="menu-cross-btn" >
+                    <a href="#" title="Close"><i class="fa-regular fa-x "></i></a>
+                </li>
+            </div>
+
+            <ul>
+                <li><a href="#home" >home </a></li>
+                <li><a href="#skill" >skill </a></li>
+                <li><a href="#exprience" >exprience </a></li>
+                <li><a href="#topic" >topic </a></li>
+                <li><a href="#blog" >blog</a></li>
+                <li><a href="#work" >work </a></li>
+                <li><a href="#contact" class="sidenav-contact">contact</a></li>
+            
+            </ul>
+
+            <div class="profile">
+                <a href="" title="Sumit sarkar (Developer profile)"><img src="image/sumit sarkar.jpg" alt="" width="50px" height="50px" style="border-radius: 50%; border: 1px solid rgba(62, 185, 24, 0.404); padding: 2px;"></a>
+                <div class="profile-card">
+                    <h6>Hello Sumit</h6>
+                    <p>you have <span> 2 </span> new massage</p>
+                </div>
+            </div> 
+            
+            <div class="profile-link-list">
+                <div class="link-left">
+                    <a href="#">profile</a>
+                    <a href="#">saved article</a>
+                    <a href="#">new article</a>
+                </div>
+                <div class="link-right">
+                    <a href="#">my links</a>
+                    <a href="#">account setting</a>
+                </div>
+            </div>
+
+            <div class="social-link">
+                <a href="https://www.instagram.com/sumit_sarkar89/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/sumitsarkar89/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.behance.net/sumitsarkar89" target="_blank"><i class="fa-brands fa-behance"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-upwork"></i></a>
+                <a href="https://www.youtube.com/@Sumit_sarkar89" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+            <p class="sidebar-fotter">Copyright © 2025 by Sumit Sarkar- portfolio website </p>
+            
+        </div>
+    </div>
+   </header>
+   <!-- ==============================main============================== -->
+   <main>
+    <!-- =============================hero section start here================  -->
+    <section id="hero" title="I’m dedicated to continuous learning, staying up-to-date with the latest trends in web development.">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-heading" title="Available ">
+                    <img src="image/sumit sarkar.jpg" alt="" width="25px" height="25px" style="border-radius: 10%;">
+                    <p>online</p>
+                </div>
+                <div class="title">
+                    <div class="title-box">
+                    <span>#sumit_sarkar</span>
+                    <span class="title-span">web developer</span>
+                    </div>
+                    <h1>Building Seamless and <b title="Responsive Website">User-Friendly</b> Websites for the Modern Web.</h1>
+                    <div class="buttons">
+                        <a type="button" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1CTEwnPjn2WZW2E9qf5NDFViXcVLVEMD-/view?usp=sharing" title="Download CV">download CV  <img src="image/download (1).png" alt="" > </a>
+                        <a href="#about" class="scroll-down" title="Scroll down">scroll down  <img src="image/vertical.png" alt="" ></a>
+                    </div>
+                </div>
+                <img class="decor-img" src="image/abstract-shape.png" alt="" width="30px" >
+
+            </div>
+            <div class="hero-image">
+                <img src="image/sumitpp-fotor-bg-remover-2024070.png" alt="">
+                <img class="hero-bg-img" src="image/pngwing.com.png" alt="" >
+
+               
+                <img src="image/rectangle.png" alt="" width="25px" height="27px" class="shape shape-1">
+                <img src="image/cross-hair.png" alt="" width="25px" height="27px" class="shape shape-2">
+                <img src="image/circle.png" alt="" width="25px" height="27px" class="shape shape-3" >
+               
+            </div>
+        </div>
+    </section>
+    
+    <!-- =============================about section start here================  -->
+    <section id="about" >
+       
+        <p class="about-text">
+            Hey, I am <span style="color:rgb(73, 200, 255)" title="website developer">Sumit Sarkar</span>, a passionate website developer  who loves transforming ideas into functional, beautiful websites with a strong foundation in front-end technologies in creating user-friendly, responsive, and visually appealing websites.
+            Throughout my career, I've worked on a wide range of projects, from small business websites to large-scale e-commerce platforms, always striving for quality and innovation. 
+        </p>
+        <div class="about-wrap-container">
+            <div class="about-wrap">
+                <div class="numbers">
+                    <span id="num" about-data-value = "38" title="38 plus complete project">00</span>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <p>complete project</p>
+
+            </div>
+            <div class="about-wrap">
+                <div class="numbers">
+                    <span id="num" about-data-value = "4" title="4 years of expriences">0</span>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <p>years of expriences</p>
+
+            </div>
+
+        </div>
+        
+        <a href="#skill" class="about-scroll"><img src="image/vertical.png" alt="" width="20px"></a>
+
+    </section>
+
+    <!-- =============================about section start here================  -->
+     <section id="tools">
+        <h2>Tools i used</h2>
+        <p class="tools-text">Discover the powerful tools and technologies I use to create high-performing websites & apps.</p>
+
+        <div class="tools-container">
+            <div class="tools-items" title="Figma">
+                <img src="image/figma (1).png" alt="figma logo" width="30px">
+                <div class="tools-content">
+                    <span class="tolls-heading">Figma</span>
+                    <p>Design Tool</p>
+                </div>
+
+            </div>
+            <div class="tools-items" title="CSS">
+                <img src="image/css.png" alt="css logo" width="30px">
+                <div class="tools-content">
+                    <span class="tolls-heading">CSS3</span>
+                    <p>User Interface</p>
+                </div>
+
+            </div>
+            <div class="tools-items" title="JavaScript">
+                <img src="image/java.png" alt="JavaScript" width="30px">
+                <div class="tools-content">
+                    <span class="tolls-heading">JavaScript</span>
+                    <p>Interaction</p>
+                </div>
+
+            </div>
+            <div class="tools-items" title="Node JS">
+                <img src="image/programing.png" alt="JavaScript" width="30px">
+                <div class="tools-content">
+                    <span class="tolls-heading">Node JS</span>
+                    <p>Web server</p>
+                </div>
+
+            </div>
+            <div class="tools-items" title="TailWind">
+                <img src="image/tailwind.jpg" alt="Tailwind" width="30px" style="border-radius: 5px;">
+                <div class="tools-content">
+                    <span class="tolls-heading">TailWind CSS</span>
+                    <p>user Interface</p>
+                </div>
+
+            </div>
+            <div class="tools-items" title="Bootstrap">
+                <img src="image/bootstrap (1).png" alt="Bootstrap" width="30px" style="border-radius: 5px;">
+                <div class="tools-content">
+                    <span class="tolls-heading">Bootstrap CSS</span>
+                    <p>user Interface</p>
+                </div>
+
+            </div>
+            <div class="tools-items" title="Github">
+                <img src="image/github.png" alt="Github" width="30px" style="border-radius: 5px;">
+                <div class="tools-content">
+                    <span class="tolls-heading">Github </span>
+                    <p>Version Control</p>
+                </div>
+
+            </div>
+            <div class="tools-items" title="React.JS">
+                <img src="image/react.png" alt="React.JS" width="30px" style="border-radius: 5px;">
+                <div class="tools-content">
+                    <span class="tolls-heading">React.JS </span>
+                    <p>user interfaces</p>
+                </div>
+
+            </div>
+        </div>
+     </section>
+   
+    <!-- =============================skill section start here================  -->
+
+    <section id="skill" title="Skill and Expertise">
+        <div class="skill-container">
+            <div class="skill-side-1" id="expertise">
+                <div class="skill-head">
+                    <h2>Skill and Expertise</h2>
+                    <p class="skill-text">
+                        As a front-end web developer, I focus on creating easy-to-use, attractive, and mobile-friendly websites that work well on any device. I make sure the code is clean, the website loads quickly, and users have a smooth experience. I use the latest tools and technologies to build websites that look great and function perfectly.
+                    </p>
+
+                    <div class="skill-body">
+                        <div class="skill-content">
+                            <h4 class="skill-name">HTML</h4>
+                            <div class="skill-box">
+                                <div class="html-skill"></div>
+                                <div class="percentage">95%</div>
+                            </div>
+                        </div>
+            
+                        <div class="skill-content">
+                            <h4 class="skill-name">CSS</h4>
+                            <div class="skill-box">
+                                <div class="css-skill"></div>
+                                <div class="percentage">85%</div>
+                            </div>
+                        </div>
+            
+                        <div class="skill-content">
+                            <h4 class="skill-name">JavaScript</h4>
+                            <div class="skill-box">
+                                <div class="js-skill"></div>
+                                <div class="percentage">65%</div>
+                            </div>
+                        </div>
+            
+                        <div class="skill-content">
+                            <h4 class="skill-name">React</h4>
+                            <div class="skill-box">
+                                <div class="rt-skill"></div>
+                                <div class="percentage">45%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+            <div class="skill-side-2">
+                <div class="expert-container">
+                    <div class="button-box">
+                        <a class="btn" title="Hypertext Markup Language" id="default" onclick="showpanel('btn1', this, ' hsla(217, 17%, 48%, 1)')">HTML/5</a>
+                        <a class="btn" title="Cascading Style Sheet" onclick="showpanel('btn2', this, 'hsla(217, 17%, 48%, 1)')">CSS3</a>
+                        <a class="btn" title="JavaScript" onclick="showpanel('btn3', this, 'hsla(217, 17%, 48%, 1)')">JavaScript</a>
+                        <a class="btn" title="React JavaScript" onclick="showpanel('btn4', this, ' hsla(217, 17%, 48%, 1)')">React.JS</a>
+                    </div>
+                    <div class="tabpanel" id="btn1" >
+                        <p>Mastery in crafting semantic, accessible HTML that is optimized for SEO and performance. I use the latest HTML standards to structure content, ensuring clarity, accessibility, and search engine optimization.</p>
+                        <img src="image/html.png" alt="" width="50px">
+                    </div>
+                    <div class="tabpanel" id="btn2">
+                        <p>Expertise in modern CSS techniques, including Flexbox and Grid Layout, to create responsive designs that adapt fluidly to any screen size. I write clean, maintainable stylesheets and implement animations for dynamic user interactions.</p>
+                        <img src="image/css.png" alt="" width="50px">
+                    </div>
+                    <div class="tabpanel" id="btn3">
+                        <p>Strong proficiency in modern JavaScript (ES6+), including concepts such as promises, async/await, and destructuring. I build dynamic features and interactive elements like carousels, modals, and sliders.</p>
+                        <img src="image/java.png" alt="" width="50px">
+                    </div>
+                    <div class="tabpanel" id="btn4">
+                        <p>Deep experience in building component-based, interactive web applications with React. I use React hooks, state management (Redux, Context API), and other advanced patterns to create scalable and maintainable apps.</p>
+                        <img src="image/react.png" alt="" width="50px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#topics" class="about-scroll"><img src="image/vertical.png" alt="" width="20px"></a>
+
+    </section>
+    
+    <!-- =============================topics section start here================  -->
+    <section id="topics">
+        <div class="topic-body">
+            <div class="topic-head">
+                <h4 class="topic-title">Latest Topics</h4>
+                <p class="text">Don't miss todays latest news about besic information and advance framework tools Guideline of Modern Website.... </p>
+            </div>
+            <div class="topic-btn">
+                
+            <i class="fa-solid fa-arrow-left arrow" id="topic-prev"></i>
+            <i class="fa-solid fa-arrow-right arrow" id="topic-next"></i>
+
+            </div>
+            <button type="button" class="topic-img-btn">learn more</button>
+        </div>
+        <div id="topic-slider">
+            <div class="slide-item" title="Learn More.. ">
+                <img src="image/topic (1).png" alt="2025 top strategic Tecnology"> 
+                <div class="topics-img-content">
+                    <p style="font-size: 0.8rem; margin-left: 6px; font-weight: 300; color: #92A8C8;">2025 top strategic Tecnology</p>
+                </div>    
+            </div>
+            <div class="slide-item" title="Learn More.. ">
+                <img src="image/topic (2).png" alt="Website launch Announcement"> 
+                <div class="topics-img-content">
+                    <p style="font-size: 0.8rem; margin-left: 6px; font-weight: 300; color: #92A8C8;">Website launch Announcement</p>
+                </div>   
+                   
+            </div>
+            <div class="slide-item" title="Learn More.. ">
+                <img src="image/topic (3).png" alt="Entertainment Website Idea">
+                <div class="topics-img-content">
+                    <p style="font-size: 0.8rem; margin-left: 6px; font-weight: 300; color: #92A8C8;">Entertainment Website Idea</p>
+                </div>  
+                  
+            </div>
+            <div class="slide-item" title="Learn More.. ">
+                <img src="image/topic (4).png" alt="Impact of Artificial Intelligence"> 
+                <div class="topics-img-content">
+                    <p style="font-size: 0.8rem; margin-left: 6px; font-weight: 300; color: #92A8C8;">Impact of Artificial Intelligence</p>
+                </div> 
+                   
+            </div>
+            <div class="slide-item" title="Learn More.. ">
+                <img src="image/topic (5).png" alt="The Future of Web Design"> 
+                <div class="topics-img-content">
+                    <p style="font-size: 0.8rem; margin-left: 6px; font-weight: 300; color: #92A8C8;">The Future of Web Design</p>
+                </div> 
+                   
+                   
+            </div>
+
+            
+        </div>
+
+        <div class="topic-modal">
+            <span class="topic-closed">X</span>
+            <div class="topic-modal-body">
+                <img src="" class="topic-modal-img">
+                <span class="topic-modal-text"></span>
+                <p class="topic-modal-paragraph">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, vitae. Aut cupiditate, delectus similique fugiat dolorem possimus necessitatibus sapiente quisquam earum illo eveniet rerum? Cupiditate obcaecati, laudantium ut tempora rerum animi. Soluta saepe ratione deserunt ex voluptatibus! Eum facere iste placeat voluptates id amet odio exercitationem, vero voluptate voluptatum harum, ut autem quidem, quam rerum voluptatem error. Architecto totam et, porro non consectetur ducimus id voluptate iure deleniti optio. Pariatur qui, dolorem ea ex earum autem modi accusantium dolore blanditiis laboriosam enim impedit veniam. Fugit, nam voluptatem! Illo amet unde a. In minima maiores maxime eligendi dolore distinctio aspernatur eaque.
+                </p>
+            </div>
+        </div>
+        
+    </div>
+       
+    </section>
+     <!-- =============================work templete================  -->
+
+     <section id="worktemplete">
+        
+
+     </section>
+    
+
+
+    
+   </main>
+   <!-- ==============================footer============================== -->
+   <footer id="footer">
+
+   </footer>
+
+    <!-- ==============================cursor============================== -->
+    <section>
+    <div class="cursor outer"></div>
+    </section>
+    <!-- ==============================toggle top ============================== -->
+    <section>
+        <a href="#" class="top-scroll" title="Go to Top ">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </section>
+    <!-- ==============================massage toggle ============================== -->
+     <section id="msg">
+        <i class="msg-box" title="Lets Chat"><img src="image/mail.png" alt="message" width="27px"></i>
+        <div class="msg-modal-box">
+            <textarea name="massage" id="" cols="35" rows="6" placeholder="Type your Message" ></textarea>
+            <img id="msg-dlt" src="image/delete-button.png" alt="" width="13px">
+            <a id="msg-btn" target="_blank" href="https://wa.me/+8801914738110"><img src="image/whatsapp.png" alt="" width="22px"></a>
+
+        </div>
+        <div id="msg-snakebar">
+            <div class="toast-box">
+                <i class="fa-solid fa-check"></i>
+                <p>your message has been sent</p>
+                <span id="toast-dlt">x</span>
+            </div>
+
+        </div>
+        
+     </section>
+    
+    <script src="app.js"></script>
+</body>
+</html>
