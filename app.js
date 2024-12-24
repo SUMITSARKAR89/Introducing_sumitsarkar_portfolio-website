@@ -210,3 +210,48 @@ toastDlt.addEventListener('click', () => {
     massageSnakeBar.style.display = "none";
 });
 
+// ======================more topic======================
+
+const moreBtnContainer = document.getElementById("myBtnContainer");
+const featureBtns = document.querySelectorAll(".feature-btn");
+const featureColumns = document.querySelectorAll(".column");
+
+function featureFilter(category) {
+    // Show all if category is 'all', otherwise filter by category
+    featureColumns.forEach((a) => {
+      if (category === "all" || a.classList.contains(category)) {
+        a.classList.add("show");
+        
+      } else {
+        a.classList.remove("show");
+        
+      }
+    });
+  };
+  // Initialize to show all
+  featureFilter("all");
+
+  // Add active class to the clicked button
+
+  featureBtns.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      // Remove 'active' class from all buttons
+      featureBtns.forEach((i) => i.classList.remove("feature-active"));
+      // Add 'active' class to the clicked button
+      btn.classList.add("feature-active");
+      
+    });
+  });
+  
+//   ----------------------
+const topicLearnMore = document.querySelector('.topic-img-btn');
+const featureBlog = document.querySelector('#feature-blog');
+const listFeatureBtn = document.querySelector('#list-feature-btn');
+
+topicLearnMore.addEventListener('click', () => {
+    featureBlog.style.display = "block";
+
+});
+listFeatureBtn.addEventListener('click', () => {
+    featureBlog.style.display = "block";
+});

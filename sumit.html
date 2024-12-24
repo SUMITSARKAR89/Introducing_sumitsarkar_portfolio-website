@@ -40,12 +40,13 @@
             <ul>
                 <li class="list"><a href="#hero" class="active">home</a></li>
                 <li class="list"><a href="#skill">skill</a></li>
-                <li class="list"><a href="#worktemplete">work templete</a></li>
+                <li class="list tooltip"><a href="#worktemplete">work templete</a>
+                <span class="tooltipText">portfolio</span></li>
                 <li class="list-dropdown">
                     <a href="#post" class="dropbtn">blog <i class="fa-solid fa-chevron-down "></i></a>
                     <div class="dropdown-content">
-                        <a href="#blog-post">blog post</a>
-                        <a href="#feature">feature post</a>
+                        <a href="#feature-blog" id="list-feature-btn">blog post</a>
+                        <a href="#">feature post</a>
                         <a href="#more-work-templete" id="more-list-link">more templete</a>
                         <a href="#expertise">exprience</a>
                         <a href="#topics">topics</a>
@@ -139,7 +140,7 @@
                         <a href="#about" class="scroll-down" title="Scroll down">scroll down  <img src="image/vertical.png" alt="" ></a>
                     </div>
                 </div>
-                <img class="decor-img" src="image/abstract-shape.png" alt="" width="30px" >
+                
 
             </div>
             <div class="hero-image">
@@ -351,7 +352,9 @@
             <i class="fa-solid fa-arrow-right arrow" id="topic-next"></i>
 
             </div>
-            <button type="button" class="topic-img-btn">learn more</button>
+            <button type="button" class="topic-img-btn" title="Read More Topic">More Topic for Learn
+                <span id="new-popup">new</span>
+            </button>
         </div>
         <div id="topic-slider">
             <div class="slide-item" title="Learn More.. ">
@@ -407,10 +410,231 @@
     </div>
        
     </section>
+
+    <section id="feature-blog">
+        <h4>More Topics</h4>
+        <p>Don't miss the latest trends</p>
+        
+        <div class="feature-blog-container">
+            <img class="decor-img" src="image/abstract-shape.png" alt="" width="30px" >
+            <div class="feature-blog-left">
+                <div id="myBtnContainer" class="myBtn-container">
+                    <button class="feature-btn feature-active" onclick="featureFilter('all')"> Show All</button>
+                    <button class="feature-btn" onclick="featureFilter('category3')"> popular</button>
+                    <button class="feature-btn" onclick="featureFilter('category1')"> feature</button>
+                    <button class="feature-btn " onclick="featureFilter('category2')"> freelancer</button>
+                </div>
+
+                <span id="total-blog">13+ blogs Available </span>
+
+                <div class="feature-category">
+                    
+                    <div class="column category2">
+                        <img src="image/freelancer (2).png" alt="">
+                         <div class="column-content">
+                            <span class="tips-tool">freelancer Tips</span>
+                            <h6 class="tips-h6">The idea of freelancing working independently</h6>
+
+                            <p class="column-text" style="font-size: 0.85rem;  margin-top: -4px; font-weight: 300; line-height: 20px; color: #ffffffb9;">
+                                offering services to clients without being tied to a long-term employer. Freelancers typically have control over their .... <a href="#" class="seemore-btn">see more</a></p>
+                            <div class="column-foot">
+                                <span class="tips-hash"> #idea #key_advantage</span>
+                                <span class="tips-time">7 days ago</span>
+                            </div>
+
+                        </div> 
+                    </div>
+                    <div class="column category1  ">
+                        <img src="image/feature (1).png" alt="">
+                        <div class="column-content">
+                            <span class="tips-tool">freelancer Tips</span>
+                            <h6 class="tips-h6">The idea of freelancing working independently</h6>
+
+                            <p class="column-text" style="font-size: 0.85rem;  margin-top: -4px; font-weight: 300; line-height: 20px; color: #ffffffb9;">
+                                offering services to clients without being tied to a long-term employer. Freelancers typically have control over their .... <a href="#" class="seemore-btn">see more</a></p>
+                            <div class="column-foot">
+                                <span class="tips-hash"> #idea #key_advantage</span>
+                                <span class="tips-time">7 days ago</span>
+                            </div>
+
+                        </div> 
+                       
+                    </div>
+                    <div class="column category1  ">
+                        <img src="image/feature (4).png" alt="">
+                        <div class="column-content">
+                            <span class="tips-tool">freelancer Tips</span>
+                            <h6 class="tips-h6">The idea of freelancing working independently</h6>
+
+                            <p class="column-text" style="font-size: 0.85rem;  margin-top: -4px; font-weight: 300; line-height: 20px; color: #ffffffb9;">
+                                offering services to clients without being tied to a long-term employer. Freelancers typically have control over their .... <a href="#" class="seemore-btn">see more</a></p>
+                            <div class="column-foot">
+                                <span class="tips-hash"> #idea #key_advantage</span>
+                                <span class="tips-time">7 days ago</span>
+                            </div>
+
+                        </div> 
+                       
+                    </div>
+                    <div class="column category2  ">
+                        <img src="image/freelancer (1).png" alt="">
+                        <div class="column-content">
+                            <span class="tips-tool">freelancer Tips</span>
+                            <h6 class="tips-h6">The idea of freelancing working independently</h6>
+
+                            <p class="column-text" style="font-size: 0.85rem;  margin-top: -4px; font-weight: 300; line-height: 20px; color: #ffffffb9;">
+                                offering services to clients without being tied to a long-term employer. Freelancers typically have control over their .... <a href="#" class="seemore-btn">see more</a></p>
+                            <div class="column-foot">
+                                <span class="tips-hash"> #idea #key_advantage</span>
+                                <span class="tips-time">7 days ago</span>
+                            </div>
+
+                        </div> 
+                        
+                    </div>
+                    <div class="column category2  ">
+                        <img src="image/freelancer (4).png" alt="">
+                        <div class="column-content">
+                            <span class="tips-tool">freelancer Tips</span>
+                            <h6 class="tips-h6">The idea of freelancing working independently</h6>
+
+                            <p class="column-text" style="font-size: 0.85rem;  margin-top: -4px; font-weight: 300; line-height: 20px; color: #ffffffb9;">
+                                offering services to clients without being tied to a long-term employer. Freelancers typically have control over their .... <a href="#" class="seemore-btn">see more</a></p>
+                            <div class="column-foot">
+                                <span class="tips-hash"> #idea #key_advantage</span>
+                                <span class="tips-time">7 days ago</span>
+                            </div>
+
+                        </div> 
+                       
+                    </div>
+                    
+                    <div class="column category3  ">
+                        <img src="image/popular (2).png" alt="">
+                        <div class="column-content">
+                            <span class="tips-tool">freelancer Tips</span>
+                            <h6 class="tips-h6">The idea of freelancing working independently</h6>
+
+                            <p class="column-text" style="font-size: 0.85rem;  margin-top: -4px; font-weight: 300; line-height: 20px; color: #ffffffb9;">
+                                offering services to clients without being tied to a long-term employer. Freelancers typically have control over their .... <a href="#" class="seemore-btn">see more</a></p>
+                            <div class="column-foot">
+                                <span class="tips-hash"> #idea #key_advantage</span>
+                                <span class="tips-time">7 days ago</span>
+                            </div>
+
+                        </div> 
+                        
+                    </div>
+                    <div class="column category1  ">
+                        <img src="image/feature (2).png" alt="">
+                        <div class="column-content">
+                            <span class="tips-tool">freelancer Tips</span>
+                            <h6 class="tips-h6">The idea of freelancing working independently</h6>
+
+                            <p class="column-text" style="font-size: 0.85rem;  margin-top: -4px; font-weight: 300; line-height: 20px; color: #ffffffb9;">
+                                offering services to clients without being tied to a long-term employer. Freelancers typically have control over their .... <a href="#" class="seemore-btn">see more</a></p>
+                            <div class="column-foot">
+                                <span class="tips-hash"> #idea #key_advantage</span>
+                                <span class="tips-time">7 days ago</span>
+                            </div>
+
+                        </div> 
+                       
+                    </div>
+                    <div class="column category1  ">
+                        <img src="image/feature (3).png" alt="">
+                        <div class="column-content">
+                            <span class="tips-tool">freelancer Tips</span>
+                            <h6 class="tips-h6">The idea of freelancing working independently</h6>
+
+                            <p class="column-text" style="font-size: 0.85rem;  margin-top: -4px; font-weight: 300; line-height: 20px; color: #ffffffb9;">
+                                offering services to clients without being tied to a long-term employer. Freelancers typically have control over their .... <a href="#" class="seemore-btn">see more</a></p>
+                            <div class="column-foot">
+                                <span class="tips-hash"> #idea #key_advantage</span>
+                                <span class="tips-time">7 days ago</span>
+                            </div>
+
+                        </div> 
+                       
+                    </div>
+                    <div class="column category3  ">
+                        <img src="image/popular (3).png" alt="">
+                        <div class="column-content">
+                            <span class="tips-tool">freelancer Tips</span>
+                            <h6 class="tips-h6">The idea of freelancing working independently</h6>
+
+                            <p class="column-text" style="font-size: 0.85rem;  margin-top: -4px; font-weight: 300; line-height: 20px; color: #ffffffb9;">
+                                offering services to clients without being tied to a long-term employer. Freelancers typically have control over their .... <a href="#" class="seemore-btn">see more</a></p>
+                            <div class="column-foot">
+                                <span class="tips-hash"> #idea #key_advantage</span>
+                                <span class="tips-time">7 days ago</span>
+                            </div>
+
+                        </div> 
+                        
+                    </div>
+                    <div class="column category3  ">
+                        <img src="image/popular (4).png" alt="">
+                        <div class="column-content">
+                            <span class="tips-tool">freelancer Tips</span>
+                            <h6 class="tips-h6">The idea of freelancing working independently</h6>
+
+                            <p class="column-text" style="font-size: 0.85rem;  margin-top: -4px; font-weight: 300; line-height: 20px; color: #ffffffb9;">
+                                offering services to clients without being tied to a long-term employer. Freelancers typically have control over their .... <a href="#" class="seemore-btn">see more</a></p>
+                            <div class="column-foot">
+                                <span class="tips-hash"> #idea #key_advantage</span>
+                                <span class="tips-time">7 days ago</span>
+                            </div>
+
+                        </div> 
+                        
+                    </div>
+                    <div class="column category2  ">
+                        <img src="image/freelancer (3).png" alt="">
+                        <div class="column-content">
+                            <span class="tips-tool">freelancer Tips</span>
+                            <h6 class="tips-h6">The idea of freelancing working independently</h6>
+
+                            <p class="column-text" style="font-size: 0.85rem;  margin-top: -4px; font-weight: 300; line-height: 20px; color: #ffffffb9;">
+                                offering services to clients without being tied to a long-term employer. Freelancers typically have control over their .... <a href="#" class="seemore-btn">see more</a></p>
+                            <div class="column-foot">
+                                <span class="tips-hash"> #idea #key_advantage</span>
+                                <span class="tips-time">7 days ago</span>
+                            </div>
+
+                        </div> 
+                     
+                    </div>
+                    <div class="column category3  ">
+                        <img src="image/popular (5).png" alt="">
+                        <div class="column-content">
+                            <span class="tips-tool">freelancer Tips</span>
+                            <h6 class="tips-h6">The idea of freelancing working independently</h6>
+
+                            <p class="column-text" style="font-size: 0.85rem;  margin-top: -4px; font-weight: 300; line-height: 20px; color: #ffffffb9;">
+                                offering services to clients without being tied to a long-term employer. Freelancers typically have control over their .... <a href="#" class="seemore-btn">see more</a></p>
+                            <div class="column-foot">
+                                <span class="tips-hash"> #idea #key_advantage</span>
+                                <span class="tips-time">7 days ago</span>
+                            </div>
+
+                        </div> 
+                       
+                    </div>
+                    
+                    
+                  </div>
+            </div>
+            <div class="feature-blog-right" id=""></div>
+            <a href="#worktemplete" class="about-scroll feature-scroll" title="Scroll to Skip Topic "><img src="image/vertical.png" alt="" width="20px"></a>
+        </div>
+
+    </section>
      <!-- =============================work templete================  -->
 
      <section id="worktemplete">
-        <h2> Work Templete</h2>
+       
+        <h2> Work Templete  <a href="#" class="about-scroll feature-scroll" title="Scroll to Skip Topic "><img src="image/vertical.png" alt="" width="20px"></a> </h2>
         <p class="work-text">Working featured and some glory templetes </p>
         <div class="worktemplete-container">
             <div class="worktemplete-card" title="Fashion Photography Website">
@@ -485,8 +709,11 @@
                     <a href="https://sweet-naiad-14de7b.netlify.app/" class="work-link" target="_blank"><img src="image/link.png" alt="" width="22px"></a>
 
                 </div>
-            </div>           
+            </div>  
+                    
         </div>
+        
+            
 
         <button class="work-explore-btn"><span>Explore more</span></button>
 
@@ -551,16 +778,13 @@
             </div>
             
         </div>
+       
         
 
      </section>
       <!-- =============================work templete================  -->
 
-      <section id="blog-post">
-        <div class="blog-container">
-
-        </div>
-      </section>
+     
 
     
 
@@ -583,8 +807,9 @@
         </a>
     </section>
     <!-- ==============================massage toggle ============================== -->
-     <section id="msg">
-        <i class="msg-box" title="Lets Chat"><img src="image/mail.png" alt="message" width="27px"></i>
+     <section id="msg" title="Lets Chat">
+        <i class="msg-box " ><img src="image/mail.png" alt="message" width="27px"></i>
+       
         <div class="msg-modal-box">
             <textarea name="massage" id="" cols="35" rows="6" placeholder="Type your Message" ></textarea>
             <img id="msg-dlt" src="image/delete-button.png" alt="" width="17px">
